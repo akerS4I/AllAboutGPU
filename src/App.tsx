@@ -1,11 +1,11 @@
 import "./App.css";
-import Heart from "./components/Heart";
+import RTX4090 from "./components/RTX4090";
 
 function App() {
   return (
     <>
-      {/* <button>Hi there</button> */}
-      <Heart />
+      <button>Hi there</button>
+      <RTX4090 />
     </>
   );
 }
