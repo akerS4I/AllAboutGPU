@@ -1,12 +1,7 @@
 // Define global variables for theme colors
-$dark-background-color: #242424;
-$dark-text-color: rgba(255, 255, 255, 0.87);
-
-$light-background-color: #ffffff;
-$light-text-color: #213547;
-$hover-link-color: #747bff;
-$light-button-bg: #f9f9f9;
-
+$background-color: #242424;
+$text-color: rgba(255, 255, 255, 0.87);
+$link-color: #747bff;
 :root {
   // Font and typography
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,8 +10,8 @@ $light-button-bg: #f9f9f9;
 
   // Color and background
   color-scheme: light dark;
-  color: $dark-text-color;
-  background-color: $dark-background-color;
+  color: $text-color;
+  background-color: $background-color;
 
   // Performance and rendering
   font-synthesis: none;
@@ -25,24 +20,8 @@ $light-button-bg: #f9f9f9;
   -moz-osx-font-smoothing: grayscale;
 
   // Reset margins and padding
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   min-width: 100%;
   min-height: 100vh;
-}
-
-// Light mode styles
-@media (prefers-color-scheme: light) {
-  :root {
-    color: $light-text-color;
-    background-color: $light-background-color;
-  }
-
-  a:hover {
-    color: $hover-link-color;
-  }
-
-  button {
-    background-color: $light-button-bg;
-  }
 }
